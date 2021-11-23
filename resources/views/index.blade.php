@@ -75,32 +75,58 @@
                     Lista da fare
                 </div>
                 <div class="card-body">
-                    <table id="datatablesSimple">
-                        <thead>
-                            <tr>
-                                <th>Data</th>
-                                <th>Testo</th>
-                                <th>Fatto</th>
-                                <th>Seleziona come fatto</th>
-                            </tr>
-                        </thead>
 
-                        <tbody>
-                            @if(isset($note))
-                            @foreach($note as $k)
+
+
+                        <table id="datatablesSimple">
+                            <thead>
                                 <tr>
-                                    <td style="text-align:center;">{{$k->data}}</td>
-                                    <td>{{$k->testo}}</td>
-                                    <td style="text-align:center; ">@if($k->fatto == 1) <i class="fas fa-check" style="color:green;"></i>@else <i class="fas fa-times" style="color:red;"></i>@endif</td>
-                                    <td style="text-align:center;"><button class="btn btn-primary"><i class="fas fa-check"></i></button></td>
+                                    <th>Data</th>
+                                    <th>Testo</th>
+                                    <th>Fatto</th>
+                                    <th>Seleziona come fatto</th>
                                 </tr>
-                            @endforeach
-                            @endif
-                        </tbody>
-                    </table>
+                            </thead>
+
+                            <tbody id="render-list">
+
+                                <tr v-for="nota in note">
+                                    <td>@{{nota.data}}</td>
+                                    <td>@{{nota.testo}}</td>
+                                    <td>@{{nota.fatto}}</td>
+                                    <td>Ciao</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
                 </div>
             </div>
         </div>
 
     </main>
+@endsection
+
+
+@section('scripts')
+<script>
+
+let todolist = null;
+
+$.get('{{url("dafare")}}', function(json) {
+    if(json.res) {
+        Vue.createApp({
+            data() {
+                return {
+                    note:json.dafare
+                }
+            }
+        }).mount('#render-list')
+    }
+})
+
+
+
+</script>
 @endsection
