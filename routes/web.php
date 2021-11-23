@@ -16,6 +16,7 @@ use App\Http\Controllers\SitoController;
 */
 
 Route::get('/', 'App\Http\Controllers\SitoController@home');
+Route::get('/dafare', 'App\Http\Controllers\SitoController@getDafare');
 
 Route::get('/vue', function () {
     return view('vue');
