@@ -64,8 +64,8 @@
 
     </head>
     <body class="sb-nav-fixed">
-
         <div id="loader" style="display:none;"></div>
+
 
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
