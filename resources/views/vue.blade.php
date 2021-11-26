@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="card mb-4">
-                    <div class="card-header"> Form inserimento valori</div>
+                    <div class="card-header"> Form inserimento valori modifica 2</div>
                     <div class="card-body">
                         <text-input id="ciao">
 
