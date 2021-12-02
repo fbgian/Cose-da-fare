@@ -11,7 +11,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="layoutError">
+        <div id="layoutError"><!-- pagina di errore -->
             <div id="layoutError_content">
                 <main>
                     <div class="container">
