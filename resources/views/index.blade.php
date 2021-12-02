@@ -72,7 +72,7 @@
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-table me-1"></i>
-                    Lista da fare AGGIORNATA
+                    Lista da fare AGGIORNATA (SENZA VUE E MYSQL NON VERRA VISUALIZZATO NULLA)
                 </div>
                 <div class="card-body">
 
