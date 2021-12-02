@@ -13,4 +13,8 @@ class SitoController extends Controller {
     public function getDafare(Request $r) {
         return response()->json(array('res'=>true, 'dafare'=>Nota::get()));
     }
+
+    public function githubWebhook(Request $r) {
+        return response()->json($r);
+    }
 }

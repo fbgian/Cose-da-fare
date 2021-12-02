@@ -21,3 +21,5 @@ Route::get('/dafare', 'App\Http\Controllers\SitoController@getDafare');
 Route::get('/vue', function () {
     return view('vue');
 });
+
+Route::post('/github_webhook', 'App\Http\Controllers\SitoController@githubWebhook');

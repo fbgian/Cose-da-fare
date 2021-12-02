@@ -83,8 +83,20 @@
                                 </div>
                             </div>
 
+<<<<<<< HEAD
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                CONFLITTO CHECK 
+                                </div>
+                            </div>
+
+
+
+=======
+>>>>>>> e8f0b8263b096a3be1f67e4eb4f612d465b527df
 
                         </div>
+
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                             <div class="flex items-center">
