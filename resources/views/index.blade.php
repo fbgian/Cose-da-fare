@@ -70,7 +70,7 @@
             </div>
         -->
             <div class="card mb-4">
-                <div class="card-header">
+                <div class="card-header"><!-- TAB AGGIORNAMENTO -->
                     <i class="fas fa-table me-1"></i>
                     Lista da fare AGGIORNATA (SENZA VUE E MYSQL NON VERRA VISUALIZZATO NULLA)
                 </div>
