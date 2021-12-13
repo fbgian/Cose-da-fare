@@ -93,8 +93,11 @@
                                 <tr v-for="nota in note">
                                     <td>@{{nota.data}}</td>
                                     <td>@{{nota.testo}}</td>
-                                    <button v-if="nota.fatto == 1" class="btn btn-success" ><i class="fas fa-check"></i></button>
-                                    <button v-else class="btn btn-danger"><i class="fas fa-times"></i></button>
+                                    <td>
+                                        
+                                        <button v-if="nota.fatto == 1" class="btn btn-success" ><i class="fas fa-check"></i></button>
+                                        <button v-else class="btn btn-danger"><i class="fas fa-times"></i></button>
+                                    </td>
                                     <td>Ciao</td>
                                 </tr>
                             </tbody>
