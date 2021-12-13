@@ -93,7 +93,7 @@
                                 <tr v-for="nota in note">
                                     <td>@{{nota.data}}</td>
                                     <td>@{{nota.testo}}</td>
-                                    <td>@{{nota.fatto}}</td>
+                                    <td v-if="nota.fatto == 1">ciao</td>
                                     <td>Ciao</td>
                                 </tr>
                             </tbody>
