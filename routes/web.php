@@ -23,3 +23,5 @@ Route::get('/vue', function () {
 });
 
 Route::post('/github_webhook', 'App\Http\Controllers\SitoController@githubWebhook');
+
+Route::get('/markAsDone', 'App\Http\Controllers\SitoController@markAsDone');

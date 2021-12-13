@@ -17,4 +17,10 @@ class SitoController extends Controller {
     public function githubWebhook(Request $r) {
         return response()->json($r);
     }
+
+    public function markAsDone(Request $r) {
+        $nota = Nota::find($r->id);
+        $nota->fatto = 1;
+        return response()->json(array('res'=>true, 'nota'=>$nota));
+    }
 }
