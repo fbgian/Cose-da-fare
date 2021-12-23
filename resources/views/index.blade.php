@@ -94,8 +94,10 @@
                                     <td>@{{nota.data}}</td>
                                     <td>@{{nota.testo}}</td>
                                     <td>
-                                        
-                                        <button v-if="nota.fatto == 1" class="btn btn-success" ><i class="fas fa-check"></i></button>
+                                        <button v-if="nota.fatto == 1" onclick="markAsDone(@{{nota.id}})" class="btn btn-success" >
+                                            <i class="fas fa-check"></i>
+                                            @{{nota.id}}
+                                        </button>
                                         <button v-else class="btn btn-danger"><i class="fas fa-times"></i></button>
                                     </td>
                                     <td>Ciao</td>
